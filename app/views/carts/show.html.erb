@@ -3,7 +3,7 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+  <%if enhanced_cart.size > 0%>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -48,5 +48,10 @@
       <% end %>
     </div>
   </div>
-
+  <%else%>
+  <p class="alert alert-secondary" role="alert">
+    Looks like your cart is empty. Find something amazing to fill it with!
+  </p>
+  <a class= "btn btn-primary" href = "/">Home</a>
+  <%end%>
 </section>
