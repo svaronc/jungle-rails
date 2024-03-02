@@ -62,7 +62,7 @@ They can be eaten to relief a sore throat.
 As a defense mechanism the Scented Blade can collapse its flowers when it detects vibrations.
 They rely on animal pollination to reproduce. Once pollinated, they grow fairly large, delicious nuts.",
   image: open_asset('plante_2.jpg'),
-  quantity: 18,
+  quantity: 0,
   price: 24.99
 })
 
@@ -122,7 +122,7 @@ cat1.products.create!({
   As a defense mechanism the Swamp Root taste extremely sour.
   They rely on animal pollination to reproduce. To promote pollination, they produce a delicious nectar.",
   image: open_asset('plante_6.jpg'),
-  quantity: 82,
+  quantity: 0,
   price: 24.49
 })
 
