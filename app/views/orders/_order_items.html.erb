@@ -1,0 +1,17 @@
+<div class = "row">
+  <div class = "col">
+    <span>Email: <%=@order.email%></span>
+    <p><%= line_item.product.name %></p>
+    <%= image_tag line_item.product.image.thumb.url%>
+  </div>
+  <div class = "col">
+    <h4>Description</h4>
+    <p><%= line_item.product.description %></p>
+  </div>
+  <div class = "col">
+    <p>Unit price: $<%= line_item.product.price %></p>
+    <p>Quantity: <%= line_item.quantity %></p>
+    <p>Total: <%= line_item.total_price %></p>
+  </div>
+  </div>
+</div>
