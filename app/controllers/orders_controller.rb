@@ -3,7 +3,7 @@ class OrdersController < ApplicationController
   def show
     @order = Order.find(params[:id])
   end
-
+  # A function to create a charge using Stripe, create an order, and handle Stripe errors.
   def create
     charge = perform_stripe_charge
     order  = create_order(charge)
