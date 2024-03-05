@@ -1,19 +1,20 @@
 <section class="orders-show">
-  <header class="page-header">
-    <h1>Order #<%= @order.id %></h1>
-  </header>
+  <div class="mb-4">
+    <h1 class="display-4">Order #<%= @order.id %></h1>
+    <p class="lead">Email: <%=@order.email%></p>
+  </div>
   <div>
     <%= render partial: "order_items", collection: @order.line_items, as: "line_item"%>
   </div>
-  <div class = "row">
-    <div class = "col">
-      <div class="order-summary jumbotron">
-        <h4>Thank you for your order!</h4>
-      </div>
-    </div>
-    <div class = "col">
-      <h4>Total order: $<%= @order.total_cents / 100%></h4>
-    </div>
+  <div class="col-md-4">
+      <li class="list-group-item d-flex justify-content-between">
+        <span>Total (USD)</span>
+        <strong> $<%= @order.total_cents / 100%></strong>
+      </li>
+    </ul>
+    <button type="button" class="my-5 btn btn-primary btn-lg btn-block">Continue Shopping</button>
   </div>
-  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+  <p class="mb-1">Thank you for your order!</p>
+</footer>
 </section>

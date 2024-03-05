@@ -1,2 +1,37 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+<div class="container mt-5">
+  <!-- Grid system to align cards -->
+  <div class="row">
+    <!-- Card for Products -->
+    <div class="col-md-6">
+      <div class="card text-center">
+        <div class="card-header">
+          <h4>Products</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title display-3" id="products-count"><%=  @products.size %></h1>
+          <p class="card-text">Our store has a total of <span class="badge bg-primary" id="products-badge"><%=  @products.size %></span> unique products!</p>
+        </div>
+        <div class="card-footer text-muted">
+          <%= link_to 'Products', [:admin, :products], class: "nav-link" %>
+        </div>
+      </div>
+    </div>
+    <!-- Card for Categories -->
+    <div class="col-md-6">
+      <div class="card text-center">
+        <div class="card-header">
+          <h4>Categories</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title display-3" id="categories-count"><%=  @categories.size %></h1>
+          <p class="card-text">Explore <span class="badge bg-success" id="categories-badge"><%=  @categories.size %></span> different categories!</p>
+        </div>
+        <div class="card-footer text-muted d-flex flex-row justify-content-center">
+          <% Category.all.each do |category| %>
+            <%= link_to category.name, category, class: "nav-link" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
