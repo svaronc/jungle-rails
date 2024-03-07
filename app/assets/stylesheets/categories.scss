@@ -1,0 +1,63 @@
+.container {
+  max-width: 1200px; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the container */
+  padding: 20px;
+}
+
+/* Admin header styles */
+.admin-header {
+  color: #333; /* Dark grey color for text */
+  margin-bottom: 30px; /* Spacing below the header */
+  padding-bottom: 10px; /* Small padding to give some space */
+  border-bottom: 1px solid #eaeaea; /* Light line to separate header */
+  text-align: center; /* Center align the header text */
+}
+
+/* Button styles */
+.btn-new-category {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: #ffffff; /* White text */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Top/bottom and left/right padding */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Spacing below the button */
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Allow setting padding and margins */
+}
+
+.btn-new-category:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #ffffff; /* Keep text white on hover */
+}
+
+/* Table styles */
+.admin-table {
+  width: 100%; /* Full width */
+  background-color: #ffffff; /* White background for the table */
+  border-collapse: collapse; /* Collapse borders */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 30px; /* Spacing below the table */
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left; /* Align text to the left */
+  padding: 15px; /* Add space inside cells */
+  border-bottom: 1px solid #eaeaea; /* Light line between rows */
+}
+
+/* Footer styles */
+.footer {
+  text-align: center; /* Center align the footer text */
+  padding: 20px 0; /* Padding above/below the text */
+  font-size: 0.8em; /* Smaller font size */
+  color: #777; /* Medium grey for the text */
+  background-color: #f2f2f2; /* Slightly darker grey background */
+}
+
+ a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Adds underline on hover, for example */
+  /* Other styles you want to change on hover */
+}

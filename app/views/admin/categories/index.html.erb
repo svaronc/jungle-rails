@@ -1,0 +1,21 @@
+<div class="admin-header">
+  <h1>Admin » All Categories</h1>
+</div>
+<div class="container">
+  <!-- Button to add new category -->
+ <div class="well my-5">
+    <%= link_to 'New Category', new_admin_category_path, class: 'btn btn-info' %>
+  </div>
+
+  <!-- Categories table -->
+  <table class="admin-table">
+    <thead>
+      <tr>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%= render @categories %>
+    </tbody>
+  </table>
+</div>
