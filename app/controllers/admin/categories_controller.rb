@@ -1,5 +1,5 @@
 class Admin::CategoriesController < ApplicationController
-  before_filter :authorize
+  before_action :authorize
   # GET /admin/categories or /admin/categories.json
   def index
     @categories = Category.all
